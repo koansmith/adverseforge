@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Data (téléchargée via scripts, non versionnée)
+data/
+!data/.gitkeep
+
+# PDFs des papers (droits d'auteur, local uniquement)
+docs/papers_pdf/
+!docs/papers_pdf/.gitkeep
+
+# Experiment outputs
+wandb/
+runs/
+checkpoints/
+*.pth
+*.ckpt
+*.safetensors
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.toc
+paper/*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
