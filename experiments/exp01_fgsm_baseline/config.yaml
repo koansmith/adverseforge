@@ -1,0 +1,19 @@
+experiment:
+  name: exp01_fgsm_baseline
+  description: FGSM baseline on MNIST + CIFAR-10
+  date: 2026-10-XX
+
+dataset:
+  name: mnist
+  batch_size: 128
+
+model:
+  name: simple_cnn
+  pretrained: false
+
+attack:
+  name: fgsm
+  epsilons: [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30]
+  norm: linf
+
+seed: 42
